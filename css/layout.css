@@ -57,6 +57,11 @@ h4 {
     color: #fff;
     margin: 0;
 }
+h5 {
+    font-weight: bold;
+    font-size: 1.6rem;
+    font-family: var(--font-family);
+}
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -232,4 +237,57 @@ input[type="number"] {
 .formulario__seccion--textarea {
     height: 14.7rem;
     resize: none;
+}
+/* footer */
+.footer {
+    background-color: var(--secundario);
+    width: min(100%, 144rem);
+    margin: 5rem auto 0 auto;
+    color: var(--principal);
+    padding: 5rem 0 0 0;
+}
+.informacion, 
+.footer__logo,
+.contacto,
+.socialMedia {
+    text-align: center;
+}
+.footer__logo,
+.footer__informacion,
+.footer__contacts,
+.footer__socialMedia,
+.endText {
+    max-width: 90%;
+    margin: 0 auto;
+}
+.informacion__enlaces,
+.contactMap,
+.contactMovil,
+.contactEmail {
+    text-align: center;
+    color: var(--principal);
+    display: block;
+    margin: 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.03rem;
+}
+.informacion__enlaces:hover {
+    color: #888;
+    transition: .3s;
+}
+.socialIcons {
+    display: flex;
+    justify-content: space-around;
+}
+.endText {
+    font-family: var(--third-family);
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.83;
+    color: rgba(200, 200, 200, 0.5);
+    text-align: center;
+    padding: 2rem 0;
+    border-top: solid 1px #fff;
+    margin-top: 2rem;
 }
